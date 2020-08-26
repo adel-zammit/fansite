@@ -10,7 +10,7 @@ header{
 body{
     background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
-    background-image: url(img/jul-rien-100-rien.jpg);
+    background-image: url(img/lamachine.png);
 }
 
 .intro{ background-color: cornsilk;
@@ -37,9 +37,12 @@ th{
     }
 
     img{
-        width: 400px;
-        height: 200px;
+        width: auto;
+        height: 150px;
         display: flex;
-      margin: auto;
 
+      margin: auto;
+      left: auto;
+     
+      
     }
