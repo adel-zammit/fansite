@@ -203,6 +203,7 @@ body{
     background-color: rgba(245, 245, 245, 0.8);
     font-family: 'Roboto', sans-serif;
     background-image: url(img/lamachine.png);
+    background-size: cover;
 }
 
 .intro{ 
@@ -278,7 +279,7 @@ th
 {
     color:rgb(255, 251, 251);
     border:1px solid black;
-    background-color: rgb(46, 105, 139);
+    background: linear-gradient(rgb(90, 87, 250),rgb(152, 91, 250));
 }
 
 td
@@ -294,7 +295,6 @@ img
     width: auto;
     height: 150px;
     display: flex;
-
     margin: auto;
     left: auto;
 }
