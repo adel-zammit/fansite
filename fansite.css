@@ -1,22 +1,273 @@
+/* HEADER */
 header{
-    text-align: center;
-    height: 50px;
-    background: rgb(255, 208, 0);
-}
-.nav{
-    background-color: cornsilk;
+    background: rgba(255, 208, 0, 0.8);
+    height: auto;
+    border-radius: 15px;
 }
 
+header h1
+{
+    font-size: 2.8em;
+    text-align: center;
+    /* animation h1 */
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    animation-duration: 1.8s;
+}
+/* animation titre */
+@-webkit-keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  @keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+
+
+.nav{
+    background-color: rgba(255, 248, 220, 0.8);
+    border-radius: 15px;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul li
+{
+    list-style-type: none;
+}
+
+nav img
+{
+    width: 8vw;
+    height: 10vh;
+    margin: 5%;
+}
+
+/* Flash */
+.nav img:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* FIN FLASH */
+/* FIN HEADER */
+
+/* FOOTER */
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(255, 208, 0, 0.8);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+footer #gauche
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer #gauche li
+{
+    list-style-type: none;
+    margin: 3%;
+}
+footer a
+{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover
+{
+    color: white;
+    text-shadow: black 3px 3px 1px;
+}
+
+footer #milieu
+{
+    align-self: center;
+}
+#milieu img
+{
+    border-radius: 15px;
+}
+
+footer #droite
+{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #droite #github
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#github img
+{
+    width: 12vw;
+    height: 14vh;
+}
+
+footer #droite #github #git_perso
+{
+    display: flex;
+    flex-direction: column;
+}
+/* FIN FOOTER */
+
+/* ACCUEIL MAIN */
 body{
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.8);
     font-family: 'Roboto', sans-serif;
     background-image: url(img/lamachine.png);
     background-size: cover;
 }
 
-.intro{ background-color: cornsilk;
+.intro{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(255, 248, 220, 0.75);
+    padding: 1%;
+    border-radius: 15px;
+    font-weight: bold;
+}
+#description
+{
+    padding: 2%;
+}
+.intro #description h2
+{
+    text-align: center;
+}
+.intro #description p
+{
+    text-align: justify;
+    backdrop-filter: blur(3px);
 }
 
+.intro #accueil_img
+{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#accueil_img #ci
+{
+    width: 30vw;
+    height: 27vh;
+    margin: 2%;
+    align-self: center;
+}
+#accueil_img #pose
+{
+    width: 15vw;
+    height: 28vh;
+    margin: 2%;
+    align-self: center;
+}
+#accueil_img #foot
+{
+    width: 20vw;
+    height: 35vh;
+    margin: 2%;
+    align-self: center;
+}
+
+#sous_intro
+{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: black 5px 5px 1px;
+}
+/* FIN ACCUEIL MAIN */
+
+/* Discographie */
 table{
     border-collapse:collapse;
     margin:auto;
@@ -24,19 +275,22 @@ table{
     height: 30em;
 }
 
-th{
+th
+{
     color:rgb(255, 251, 251);
     border:1px solid black;
     background: linear-gradient(rgb(90, 87, 250),rgb(152, 91, 250));
-    }
+}
 
-    td{
-        border:1px solid black;
-        width: 100px;
-        height: 50px;
-        text-align: center;
-    }
+td
+{
+    border:1px solid black;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
 
+<<<<<<< HEAD
     img{
         width: auto;
         height: 150px;
@@ -48,3 +302,13 @@ th{
     .contact{
         background-color: cornsilk;
     }
+=======
+img
+{
+    width: auto;
+    height: 150px;
+    display: flex;
+    margin: auto;
+    left: auto;
+}
+>>>>>>> 0834259303b62103070fe1a544a3c5fa026bd452
