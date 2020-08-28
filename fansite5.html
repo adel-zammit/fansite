@@ -6,30 +6,84 @@
   <link rel="stylesheet" href="fansite.css">
 </head>
 
-<header>
-  <h1>WiKiPéJul</h1>
-</header>
-
 <body>
-
-  <div class="nav">
-    <ul>
-      <li class="home"><a href="fansite.html">Acceuil</a></li>
-      <li class="news"><a href="fansite2.html">Discographie</a></li>
-      <li class="clip"><a href="fansite3.html">Clip musicaux</a></li>
-      <li class="évenement"><a href="fansite4.html">Evenement</a></li>
-      <li class="contact"><a href="fansite5.html">Contact</a></li>
-    </ul>
-  </div>
-
-  <div class="contact">
-      Réseaux Sociaux :
-      Facebook : <a href="https://fr-fr.facebook.com/julOfficial/?ref=page_internal">Jul (saint Jean La Puenta)</a>
-      Instgram : <a href="https://www.instagram.com/accounts/login/?next=/juldetp/%3Fhl%3Dfr">@juldetp</a>
-      Twitter : <a href="https://twitter.com/jul?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">@jul</a>
-      <hr><br>
-      Boutique Officiel :  <a href="https://www.doretdeplatineshop.com/">D'Or et de Platine Shop Officiel par Jul</a>
-    </div>
-
-    </body>
-    </html>
+  <header>
+    <h1>D'or & Platine fansite</h1>
+    <section class="nav">
+      <nav>
+        <ul>
+          <li class="home"><a href="fansite.html"><img src="img/header/home.png" alt="icon home"></a></li>
+          <li class="news"><a href="fansite2.html"><img src="img/header/cd.png" alt="icon discographie"></a></li>
+          <li class="clip"><a href="fansite3.html"><img src="img/header/clip.png" alt="clip icon"></a></li>
+          <li class="évenement"><a href="fansite4.html"><img src="img/header/event.png" alt="event icon"></a></li>
+          <li class="contact"><a href="fansite5.html"><img src="img/header/contact.png" alt="contact icon"></a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section class="contact">
+      <h2>Réseaux Sociaux</h2>
+      <section class="reseaux">
+        <a href="https://fr-fr.facebook.com/julOfficial/?ref=page_internal"><img src="img/contact/fb.png" alt="fb de jul "></a>
+        <a href="https://www.instagram.com/accounts/login/?next=/juldetp/%3Fhl%3Dfr"><img src="img/contact/instagram.png" alt="insta de jul"></a>
+        <a href="https://twitter.com/jul?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="img/contact/twitter.png" alt="twitter de jul"></a>
+      </section>
+      <h2>Boutique Officiel</h2>
+      <section class="boutique">
+        <a href="https://www.doretdeplatineshop.com/"><span id="or">D'Or</span> et de <span id="platine">Platine</span> Shop Officiel par Jul</a>
+      </section>
+      <section class="formulaire_contact">
+        <form action="fansite5.hml" method="POST">
+          <section id=info>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" required>
+            <label for="msg">Message</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Ecrivez votre message pour Jul..."></textarea>
+          </section>
+          <section id="categorie">
+            <select name="categorie" required>
+              <option value="">Choississez une catégorie...</option>
+              <option value="">Faire de la promo</option>
+              <option value="">Etre labelisé</option>
+              <option value="">Faire un Sponso</option>
+              <option value="">Remerciements</option>
+              <option value="">Avis</option>
+              <option value="">Rencontrer Jul</option>
+            </select>
+            <button type="submit">Enovyer</button>
+          </section>
+        </form>
+      </section>
+    </section>
+  </main>
+  
+  <footer>
+    <section id="gauche">
+      <ul>
+        <li><a href="fansite.html">Accueil</a></li>
+        <li><a href="fansite2.html">Discographie</a></li>
+        <li><a href="fansite3.html">Clips musicaux</a></li>
+        <li><a href="fansite4.html">Evènements</a></li>
+        <li><a href="fansite5.html">Contact</a></li>
+      </ul>
+    </section>
+    <section id="milieu">
+      <img src="img/footer/signe.png">
+    </section>
+    <section id="droite">
+      <p>Si vous aimez notre site, notre univers pensez à visiter nos github!!</p>
+      <section id="github">
+        <section class="git_perso">
+          <p>Github de Adel</p>
+          <a href="https://github.com/adel-zammit"><img src="img/footer/a.png" alt=""></a>
+        </section>
+        <section class="git_perso">
+          <p>Github de Maxime</p>
+          <a href="https://github.com/maxime-siegl"><img src="img/footer/m.png" alt=""></a>
+        </section>
+      </section>
+    </section>
+  </footer>
+</body>
+</html>
