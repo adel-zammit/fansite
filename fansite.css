@@ -290,6 +290,19 @@ td
     text-align: center;
 }
 
+<<<<<<< HEAD
+    img{
+        width: auto;
+        height: 150px;
+        display: flex;
+      margin: auto;
+      left: auto;
+    }
+
+    .contact{
+        background-color: cornsilk;
+    }
+=======
 img
 {
     width: auto;
@@ -298,3 +311,4 @@ img
     margin: auto;
     left: auto;
 }
+>>>>>>> 0834259303b62103070fe1a544a3c5fa026bd452
